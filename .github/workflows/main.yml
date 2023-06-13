@@ -1,4 +1,4 @@
-job-name: conda build and upload
+conda_build_and_upload:
   runs-on: 'ubuntu-latest'
   steps:
     - uses: actions/checkout@v2
