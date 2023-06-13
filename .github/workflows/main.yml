@@ -17,5 +17,6 @@ jobs:
       - name: build package
         run: |
           $CONDA/bin/conda init bash
+          source ~/.bashrc
           $CONDA/bin/conda activate conda_build
           $CONDA/bin/conda build -c lcls-ii -c conda-forge recipe
