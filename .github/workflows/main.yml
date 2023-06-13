@@ -15,9 +15,9 @@ jobs:
         with:
           python-version: 3.11
           activate-environment: conda_build
-          environment-file: .github/conda_build.yml
+          environment-file: conda_build.yml
           auto-activate-base: false
       - name: build package
         run: |
           $CONDA/bin/conda config --set anaconda_upload yes
-          $CONDA/bin/conda build --token ${{ secrets.ANACONDA_TOKEN }} -c lcls-ii -c conda-forge recipe
+          $CONDA/bin/conda build --user lcls-ii --token ${{ secrets.ANACONDA_TOKEN }} -c lcls-ii -c conda-forge recipe
