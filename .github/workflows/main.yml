@@ -1,0 +1,11 @@
+job-name: conda build and upload
+  runs-on: 'ubuntu-latest'
+  steps:
+    - uses: actions/checkout@v2
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        python-version: 3.7
+    - uses: cascode-labs/build-conda-action/action.yml@v0
+      with:
+        recipe_path: 'recipe'
+        build_options: '-c lcls-ii -c conda-forge'
