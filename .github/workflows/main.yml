@@ -16,5 +16,6 @@ jobs:
           $CONDA/bin/conda create -n conda_build conda-build conda-verify anaconda-client
       - name: build package
         run: |
+          $CONDA/bin/conda init bash
           $CONDA/bin/conda activate conda_build
           $CONDA/bin/conda build -c lcls-ii -c conda-forge recipe
