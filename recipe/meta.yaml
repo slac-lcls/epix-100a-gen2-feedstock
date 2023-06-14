@@ -12,7 +12,7 @@ source:
 build:
   skip: True  # [win or osx]
   noarch: python
-  number: 6
+  number: 8
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 
@@ -25,7 +25,7 @@ requirements:
     - python
 
 about:
-  home: https://github.com/slaclab/epix-100a-gen2.git
+  home: https://github.com/slaclab/epix-100a-gen2i-feedstock.git
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt

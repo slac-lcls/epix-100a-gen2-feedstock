@@ -1,8 +1,9 @@
 name: conda_build_and_upload
 on:
   push:
-    branches:
-      - master
+    tags:
+      - build*
+
 jobs:
   conda_build_and_upload:
     runs-on: 'ubuntu-latest'
