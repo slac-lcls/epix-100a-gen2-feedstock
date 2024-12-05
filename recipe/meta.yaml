@@ -25,7 +25,7 @@ requirements:
     - python
 
 about:
-  home: https://github.com/slaclab/epix-100a-gen2i-feedstock.git
+  home: https://github.com/slaclab/epix-100a-gen2.git
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
